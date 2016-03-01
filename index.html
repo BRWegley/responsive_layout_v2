@@ -5,26 +5,31 @@
     <title>Ben Wegley | Designer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <a href="index.html" id="logo">
         <h1>Ben Wegley</h1>
-        <h2>Designer</h2>
       </a>
-      <nav>
+      <nav id="top-nav">
         <ul>
           <li><a href="index.html" class="selected">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div id="intro">
+        <p>Hi! I'm a front end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use.</p>
+        <img src="img/responsive-layout-profile.png">
+      </div>
     </header>
     <div id="wrapper">
       <section>
+        <div>
+          <h3 id="portfolio-title">PORTFOLIO</h3>
+        </div>
         <ul id="gallery">
           <li>
             <a href="#">
@@ -46,7 +51,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/portfolio-4.png" alt="Map of Favorite Spots">
+              <img src="img/portfolio-6.png" alt="Map of Favorite Spots">
               <p>This project uses mapping api's to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
             </a>
           </li>
@@ -58,16 +63,27 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/portfolio-6.png" alt="Calculator">
+              <img src="img/portfolio-4.png" alt="Calculator">
               <p>Someone can enter in the numbers they want and press the big blue button and get the result.</p>
             </a>
           </li>
         </ul>
       </section>
       <footer>
-        <a href="http://twitter.com/benwegley"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <h3 id="contact-title">CONTACT</h3>
+        <p>if you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p>Phone <strong>+1(111)555-1234</strong></p>
+        <p>Email <strong>email@yoursite.com</strong></p>
         <p>&copy; 2016 Ben Wegley.</p>
       </footer>
+      <nav id="bottom-nav">
+        <ul>
+          <h3>Ben Wegley</h3>
+          <li><a href="index.html" class="selected">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>

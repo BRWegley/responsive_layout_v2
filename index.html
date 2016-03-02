@@ -1,89 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ben Wegley | Designer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>Ben Wegley</h1>
-      </a>
-      <nav id="top-nav">
-        <ul>
-          <li><a href="index.html" class="selected">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="wrapper">
-      <div id="intro">
-        <p>Hi! I'm a front end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use.</p>
-        <img src="img/responsive-layout-profile.png">
-      </div>
-      <section>
-        <div>
-          <h3 id="portfolio-title">PORTFOLIO</h3>
-        </div>
-        <ul id="gallery">
-          <li>
-            <a href="#">
-              <img src="img/portfolio-1.png" alt="Marketing Page">
-              <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/portfolio-2.png" alt="Search Page">
-              <p>This project searches through a specific database to find information that the user trying to look up.</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/portfolio-3.png" alt="Travel App">
-              <p>This project compares travel times based on different transportation methods and tells you the best one</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/portfolio-6.png" alt="Map of Favorite Spots">
-              <p>This project uses mapping api's to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/portfolio-5.png" alt="Photo Gallery">
-              <p>This project shows pictures from a recent trop to the viewer and allows them to easily navigate through photos</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/portfolio-4.png" alt="Calculator">
-              <p>Someone can enter in the numbers they want and press the big blue button and get the result.</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <footer>
-        <h3 id="contact-title">CONTACT</h3>
-        <p>if you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p>Phone <strong>+1(111)555-1234</strong></p>
-        <p>Email <strong>email@yoursite.com</strong></p>
-        <p>&copy; 2016 Ben Wegley.</p>
-      </footer>
-      <nav id="bottom-nav">
-        <ul>
-          <h3>Ben Wegley</h3>
-          <li><a href="index.html" class="selected">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </body>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best City Guide</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header class="main-header">
+		<div class="container clearfix">
+			<h1 class="name"><a href="#">Ben Wegley</a></h1>
+			<ul class="main-nav">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+	</header><!--/.main-header-->   
+
+	<div class="banner">
+		<img class="logo" src="img/city-logo.svg" alt="City">
+		<h1 class="headline">The Best City</h1>
+		<span class="tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</span>
+	</div><!--/.banner-->
+	
+	<div class="container clearfix">
+		<div class="secondary col">
+			<h2>Welcome!</h2>
+			<p>Everything in this city is worth waiting in line for.</p>
+			<p>Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy. Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie. Pastry chocolate pastry jelly croissant.</p>
+			<p>Cake sesame snaps sweet tart candy canes tiramisu I love oat cake chocolate bar. Jelly beans pastry brownie sugar plum pastry bear claw tiramisu tootsie roll. Tootsie roll wafer I love chocolate donuts.</p>
+		</div><!--/.secondary-->
+		
+		<div class="primary col">
+			<h2>Great food</h2>
+			<img class="feat-img" src="img/treats.svg" alt="Drinks and eats">
+			<p>Croissant macaroon pie brownie. Cookie marshmallow liquorice gingerbread caramels toffee I love chocolate. Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum. Marzipan toffee drag&#233;e chocolate bar candy toffee pudding I love. Gummi bears pie gingerbread lollipop.</p>
+		</div><!--/.primary-->
+		
+		<div class="tertiary col">
+			<h2>How to get here</h2>
+			<p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.</p>
+			<p><strong>Train: </strong>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+			<p><strong>Car: </strong>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+		</div><!--/.tertiary-->	
+	</div>
+	
+	<footer class="main-footer">
+		<span>&copy;2015 Residents of The Best City Ever.</span>
+	</footer>
+	
+</body>
 </html>

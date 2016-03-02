@@ -1,203 +1,235 @@
-/* Global Layout Set-up */
-* {
-  box-sizing: border-box;
-}
+/**********************************
+GENERAL
+***********************************/
 
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: url('images/noisy_net.png');
+  font-family: 'Open Sans', sans-serif;
 }
-/* Link Styles */
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
 
 a {
   text-decoration: none;
-  color: #fff;
-}
-a:hover {
-  color: #6633ff;
 }
 
-/* Section Styles */
+img {
+  max-width: 100%;
+}
 
-.main-nav {
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
   width: 100%;
-  background: url('images/noisy_net.png');
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
 }
-.nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
   padding: 0;
 }
 
-.nav .name {
-    display: block;
-    margin-right: auto;
-    color: #fff;
-}
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
-.nav a {
-  transition: all .5s;
-}
-.nav a:hover {
-  color: #68b179;
-}
-
-header {
-  text-align: center;
-  background: url('images/moss-cave-edited.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-}
-header {
-  line-height: 1.5;
-}
-header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  transition: all .5s;
-}
-header .profile-image:hover {
-  transform: scale(1.1) rotate(90deg);
-}
-.tag {
-  color: white;
-  padding: 10px;
-  display: table;
-  margin: 10px auto;
-}
-/*.location {
-  background-color: #222;
-  color: yellow;
-}*/
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-}
-.card:hover {
-  border-color: #68b179;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
+nav li {
   display: inline-block;
-  background: #2a5c38;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #416F3B;
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
 }
+
+
+
+/**********************************
+FOOTER
+***********************************/
 
 footer {
-  width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
 }
 
-footer .copyright {
-  top: -8px;
-  font-size: .75em;
-  color: white;
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
-footer ul {
-  list-style-type: none;
+
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-footer ul li {
-  display: inline-block;
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
 }
 
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
-a.github {
-  background-image: url(images/github.svg);
-}
-a.social:hover {
-  opacity: 1;
-}
-.clearfix {
-  clear: both;
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7
 }
 
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex;
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
-
-  header {
-    min-height: 470px;
-  }
-
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
 
 
-  main {
-    padding-top: 20px;
-  }
+/**********************************
+PAGE: ABOUT
+***********************************/
 
-  main p {
-    line-height: 1.6em;
-  }
-
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
 }
+
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links */
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

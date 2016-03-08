@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Best City Guide</title>
+	<title>Ben Wegley</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
-	<header class="main-header">
+	<header class="main-header" id="top">
 		<div class="container clearfix">
 			<h1 class="name"><a href="#">Ben Wegley</a></h1>
 			<ul class="main-nav">
@@ -18,38 +18,86 @@
 				<li><a href="#">CONTACT</a></li>
 			</ul>
 		</div>
-	</header><!--/.main-header-->   
 
-	<div class="banner">
-		<img class="logo" src="img/city-logo.svg" alt="City">
-		<h1 class="headline">The Best City</h1>
-		<span class="tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</span>
-	</div><!--/.banner-->
+		<div class="banner">
+			<img class="logo" src="img/responsive-layout-profile.png" alt="Profile Picture">
+			<span class="tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</span>
+		</div><!--/.banner-->
+	</header><!--/.main-header-->   
 	
 	<div class="container clearfix">
-		<div class="secondary col">
-			<h2>Welcome!</h2>
-			<p>Everything in this city is worth waiting in line for.</p>
-			<p>Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy. Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie. Pastry chocolate pastry jelly croissant.</p>
-			<p>Cake sesame snaps sweet tart candy canes tiramisu I love oat cake chocolate bar. Jelly beans pastry brownie sugar plum pastry bear claw tiramisu tootsie roll. Tootsie roll wafer I love chocolate donuts.</p>
-		</div><!--/.secondary-->
+		<div class="portfolio-title-container">
+			<h2 class="portfolio-title">PORTFOLIO</h2>
+		</div>
 		
+		<div class="primary col">
+			<img src="img/portfolio-1.png">
+			<h3 class="piece-title">Marketing Page</h3>
+			<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+		</div>
+
+		<div class="primary col">
+			<img src="img/portfolio-2.png">
+			<h3 class="piece-title">Search Page</h3>
+			<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+		</div>
+
+		<div class="primary col">
+			<img src="img/portfolio-3.png">
+			<h3 class="piece-title">Travel App</h3>
+			<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+		</div>
+
+		<div class="secondary col">
+			<img src="img/portfolio-6.png">
+			<h3 class="piece-title">Map of Favorite Spots</h3>
+			<p>This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+		</div>
+
+		<div class="secondary col">
+			<img src="img/portfolio-5.png">
+			<h3 class="piece-title">Photo Gallery</h3>
+			<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+		</div>
+
+		<div class="secondary col">
+			<img src="img/portfolio-4.png">
+			<h3 class="piece-title">Calculator</h3>
+			<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+		</div>
+		
+	<!--
 		<div class="primary col">
 			<h2>Great food</h2>
 			<img class="feat-img" src="img/treats.svg" alt="Drinks and eats">
 			<p>Croissant macaroon pie brownie. Cookie marshmallow liquorice gingerbread caramels toffee I love chocolate. Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum. Marzipan toffee drag&#233;e chocolate bar candy toffee pudding I love. Gummi bears pie gingerbread lollipop.</p>
-		</div><!--/.primary-->
-		
+		</div>
+
 		<div class="tertiary col">
 			<h2>How to get here</h2>
 			<p><strong>Plane: </strong>Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop drag&#233;e cheesecake.</p>
 			<p><strong>Train: </strong>Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
 			<p><strong>Car: </strong>Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
-		</div><!--/.tertiary-->	
+		</div>
+	-->
+	</div><!--Main Content-->
+
+	<div class="contact-section">
+		<div class="contact-title-container">
+			<h2 class="contact-title">CONTACT</h2>
+		</div>
+		<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+		<p>Phone +1 (111) 555-1234</p>
+		<p>Email email@yoursite.com</p>
 	</div>
 	
 	<footer class="main-footer">
-		<span>&copy;2015 Residents of The Best City Ever.</span>
+		<div class="container clearfix">
+			<ul class="footer-nav">
+				<li>Ben Wegley</li>
+				<li><a href="#top">BACK TO TOP</a></li>
+			</ul>
+		</div>
 	</footer>
 	
 </body>

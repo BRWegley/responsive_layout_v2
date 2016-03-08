@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: 'Varela Round', sans-serif;
+	font-family: "Varela Round",sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
 }
@@ -20,7 +20,7 @@ p {
 h2,
 h3,
 a {
-	color: #093a58;
+	color: #000;
 }
 
 h2,
@@ -51,6 +51,11 @@ img {
 	margin-top: 5px;
 }
 
+.footer-nav {
+	display: inline-block;
+	float: right;
+}
+
 .name a,
 .main-nav a {
 	text-align: center;
@@ -59,9 +64,13 @@ img {
 }
 
 .main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
+	font-size: 1em;
+    color: black;
+    background: #fff;
+    width: 92%;
+    display: block;
+    margin: 0.45em auto;
+    text-transform: uppercase;
 }
 
 .main-nav a:hover {
@@ -70,9 +79,11 @@ img {
 
 /* ---- Layout Containers ---- */
 
-.main-header {
+.main-header,
+.contact-section {
 	padding-top: .5em;
 	padding-bottom: .5em;
+	background: #D7D6C6;
 }
 
 .banner,
@@ -81,10 +92,8 @@ img {
 }
 
 .banner {
-	color: #fff;
-	background: #3acec2;
 	padding: 3.2em 0;
-	margin-bottom: 60px;
+	display: block;
 }
 
 .col {
@@ -102,12 +111,30 @@ img {
 
 .logo {
 	width: 190px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
 }
 
 .headline {
 	margin-bottom: 0;
 }
 
+.portfolio-title-container,
+.contact-title-container {
+    text-align: center;
+    padding: 1.5em;
+}
+
+.portfolio-title,
+.contact-title {
+    font-weight: bolder;
+}
+
+.piece-title {
+	text-align: center;
+	padding-top: 1em;
+}
 /* ================================= 
   Media Queries
 ==================================== */
@@ -129,7 +156,8 @@ img {
 		width: 50%;
 	}
 
-	.main-nav {
+	.main-nav,
+	.footer-nav {
 		float: right;
 	}
 

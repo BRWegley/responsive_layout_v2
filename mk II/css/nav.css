@@ -3,19 +3,24 @@
 --------------------------- */
 
 .main-header,
-.main-footer,
 .nav {
 	display: flex;
 	flex-direction: column;
 }
 
-.main-header,
-.main-footer {
+.main-header {
 	padding-top: 2em;
 }
 
+.main-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px solid #000;
+}
+
 .site-logo {
-	width: 110px;
+	width: auto;
 	align-self: center;
 }
 
@@ -23,13 +28,19 @@
 	margin-top: 1.5em;
 }
 
+#footer-nav {
+	align-content: center;
+}
+
 .nav a {
 	display: block;
 	color: #797e83;
+	background-color: tomato;
 	font-size: 1.125em;
 	font-weight: 300;
 	text-align: center;
 	padding: .4em;
+	margin: .2em;
 	border-bottom: 1px solid #ebecec;
 }
 
@@ -42,9 +53,8 @@
   Media Queries
 --------------------------- */
 
-@media (min-width: 769px) {
-	.main-header,
-	.main-footer {
+@media (min-width: 768px) {
+	.main-header {
 		height: 200px;
 		justify-content: flex-end;
 	}
@@ -56,9 +66,24 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
+    
 	.nav a {
 		border-bottom-color: transparent;
 	}
+    
+    #footer-nav {
+        margin-top: 1.5em;
+        flex-direction: row;
+		justify-content: space-between;
+    }
+    
+    /* ---- Float clearfix ---- */
+ 
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -77,4 +102,12 @@
 		margin-left: .65em;
 		margin-right: .65em;
 	}
+    
+    /* ---- Float clearfix ---- */
+ 
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 }

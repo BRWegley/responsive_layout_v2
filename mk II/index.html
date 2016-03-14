@@ -2,7 +2,7 @@
 <html>
 	
 	<head>
-		<title>Poly</title>
+		<title>Ben Wegley's Portfolio</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/nav.css">
@@ -11,66 +11,91 @@
 	<body>
 
 		<div class="container">
+            
+            <div class="clearfix">
 
-			<header class="main-header"><!-- start header	-->
-				<a class="site-logo" href="/">
-					<img src="img/logo.svg" alt="Poly - UI Toolkit">
-				</a>
+                <header class="main-header"><!-- start header -->
+                    <a class="site-logo" href="/">
+                        <!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
+                        <h2 id="designer-name">Ben Wegley</h2>
+                    </a>
 
-				<ul class="nav">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">PORTFOLIO</a></li>		
-					<li><a href="#">CONTACT</a></li>						
-				</ul>
-			</header><!-- end header	-->
+                    <ul class="nav ">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>		
+                        <li><a href="#">CONTACT</a></li>						
+                    </ul>
 
-			<div class="main-content"><!-- start content -->
-				<div class="project" id="first">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
+                    <div class="about"> <!-- start about -->
+                        <img id="profile-picture" src="img/me.jpg" alt="Profile Picture">
+                        <p class="tagline" id="header-tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+                    </div><!-- end about -->
+
+                </header><!-- end header -->
+                
+            </div>
+		
+
+			<div class="main-content clearfix"><!-- start content -->
+				
+				<h3 class="portfolio-title">PORTFOLIO</h3>
+				
+				<div class="project" id="first" alt="">
+					<img src="img/portfolio-1.png" alt="Marketing Page">
+					<h1 class="piece-title">Marketing Page</h1>
+					<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
 				</div>
+				
 				<div class="project" id="second">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
+					<img src="img/portfolio-2.png" alt="Search Page">
+					<h1 class="piece-title">Search Page</h1>
+					<p>This project searches through a specific database to find information that the user is trying to look up.</p>
 				</div>
+				
 				<div class="project" id="third">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
+					<img src="img/portfolio-3.png" alt="Travel App">
+					<h1 class="piece-title">Travel App</h1>
+					<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
 				</div>
+				
 				<div class="project" id="fourth">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
+					<img src="img/portfolio-6.png" alt="Map of Favorite Spots">
+					<h1 class="piece-title">Map of Favorite Spots</h1>
+					<p>This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
 				</div>
+				
 				<div class="project" id="fifth">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
+					<img src="img/portfolio-5.png" alt="Photo Gallery">
+					<h1>Photo Gallery</h1>
+					<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
 				</div>
+				
 				<div class="project" id="sixth">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
-				</div>
-				<div class="project" id="seventh">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
-				</div>
-				<div class="project" id="eighth">
-					<h1>Main Headline</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lobortis quam id venenatis. Integer eget pulvinar elit. Nunc magna mauris, sollicitudin eget ex quis, sagittis pretium velit. Morbi eget tortor vel massa iaculis tincidunt in eget nunc. Curabitur ornare faucibus fringilla. Praesent magna neque, auctor ac euismod sed, suscipit sed lorem. Curabitur euismod tellus et nibh condimentum mollis. Phasellus eleifend semper augue, ut feugiat orci fringilla non. Cras vel ultricies eros. Sed sed ante a ante gravida efficitur quis non dui. Fusce sagittis ullamcorper metus et tempus.</p>
+					<img src="img/portfolio-4.png" alt="Calculator">
+					<h1 class="piece-title">Calculator</h1>
+					<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 				</div>
 
 			</div><!-- end content -->
+			
+			<div class="contact"> <!-- start contact -->
+				<h3 class="portfolio-title">CONTACT</h3>
+				<p class="tagline" id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+				<p>Phone <strong>+1 (111) 555-1234</strong></p>
+				<p>Email <strong>email@yoursite.com</strong></p>
+			</div><!-- end contact -->
 
-			<footer class="main-footer"><!-- start footer	-->
-				<a class="site-logo" href="/">
-					<img src="img/logo.svg" alt="Poly - UI Toolkit">
+			<footer class="main-footer"><!-- start footer -->
+				
+				<a class="footer-name" href="/">
+					<!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
+					<h2 id="footer-designer-name">Ben Wegley</h2>
 				</a>
 
-				<ul class="nav">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">PORTFOLIO</a></li>		
-					<li><a href="#">CONTACT</a></li>					
+				<ul class="nav" id="footer-nav">
+					<li><a href="#">BACK TO TOP</a></li>					
 				</ul>
-			</footer><!-- end header	-->
+			</footer><!-- end header -->
 
 		</div><!-- end container -->
 

@@ -33,6 +33,52 @@ a {
   font-weight: 400; 
 }
 
+img {
+	max-width: 99%;
+}
+
+header,
+footer {
+	background-color: whitesmoke;
+	width: 100%
+}
+
+#designer-name {
+	font-size: 2em;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+#footer-designer-name {
+	font-size: 1.125em;
+	padding: 1em;
+}
+
+#profile-picture {
+	max-width: 75%;
+	margin: 3em auto 0;
+}
+
+.about,
+.contact {
+	text-align: center;
+	font-size: 1.15em;
+}
+
+.contact {
+	padding-top: .5em;
+	padding-bottom: 3.5em;
+	background-color: whitesmoke;
+}
+
+.portfolio-title {
+	text-align: center;
+	padding: 2em;
+	font-size: 1.05em;
+	font-weight: 800;
+	color: #000;
+}
+
 .container {
 	width: 90%;
 	margin: auto;
@@ -42,21 +88,51 @@ a {
 	margin-top: 3.25em;
 }
 
+
+/* --------------------------
+  Portfolio Pieces
+--------------------------- */
+
+.project{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.project p {
+	font-size: 1.04em;
+}
+
+
+
 /* --------------------------
   Media Queries
 --------------------------- */
 
-@media (min-width: 769px) {
-	p {
-		-webkit-column-count: 2;
-		-webkit-column-gap: 2.5em;
+@media (min-width: 768px) {
+    
+	#first,
+    #third,
+    #fifth {
+		 width: 49.25%;
+		 float: left;
+         margin-right: .5%;
+   	}
+   
+    #second,
+    #fourth,
+    #sixth {
+        width: 49.25%;
+        float: right;
+    }
+    
+    /* ---- Float clearfix ---- */
+ 
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 	
-		-moz-column-count: 2;
-		-moz-column-gap: 2.5em;
-	
-		column-count: 2;
-		column-gap: 2.5em;
-	}
 }
 
 @media (min-width: 1200px) {

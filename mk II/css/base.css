@@ -88,6 +88,14 @@ footer {
 	margin-top: 3.25em;
 }
 
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 
 /* --------------------------
   Portfolio Pieces
@@ -100,43 +108,4 @@ footer {
 
 .project p {
 	font-size: 1.04em;
-}
-
-
-
-/* --------------------------
-  Media Queries
---------------------------- */
-
-@media (min-width: 768px) {
-    
-	#first,
-    #third,
-    #fifth {
-		 width: 49.25%;
-		 float: left;
-         margin-right: .5%;
-   	}
-   
-    #second,
-    #fourth,
-    #sixth {
-        width: 49.25%;
-        float: right;
-    }
-    
-    /* ---- Float clearfix ---- */
- 
-    .clearfix::after {
-        content: " ";
-        display: table;
-        clear: both;
-    }
-	
-}
-
-@media (min-width: 1200px) {
-	.container {
-		width: 1080px;
-	}
 }

@@ -6,35 +6,32 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/queries.css">
 	</head>
 	
 	<body>
 
-		<div class="container">
-            
-            <div class="clearfix">
+		<header class="main-header"><!-- start header -->
+                <a class="site-logo" href="/">
+                    <!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
+                    <h2 id="designer-name">Ben Wegley</h2>
+                </a>
 
-                <header class="main-header"><!-- start header -->
-                    <a class="site-logo" href="/">
-                        <!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
-                        <h2 id="designer-name">Ben Wegley</h2>
-                    </a>
+                <ul class="nav ">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>		
+                    <li><a href="#">CONTACT</a></li>						
+                </ul>
 
-                    <ul class="nav ">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>		
-                        <li><a href="#">CONTACT</a></li>						
-                    </ul>
+                <div class="about"> <!-- start about -->
+                    <img id="profile-picture" src="img/me.jpg" alt="Profile Picture">
+                    <p class="tagline" id="header-tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+                </div><!-- end about -->
 
-                    <div class="about"> <!-- start about -->
-                        <img id="profile-picture" src="img/me.jpg" alt="Profile Picture">
-                        <p class="tagline" id="header-tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-                    </div><!-- end about -->
-
-                </header><!-- end header -->
-                
-            </div>
-		
+        </header><!-- end header -->
+        
+        
+        <div class="container">
 
 			<div class="main-content clearfix"><!-- start content -->
 				
@@ -77,15 +74,17 @@
 				</div>
 
 			</div><!-- end content -->
-			
-			<div class="contact"> <!-- start contact -->
+
+		</div><!-- end container -->
+        
+        <div class="contact"> <!-- start contact -->
 				<h3 class="portfolio-title">CONTACT</h3>
 				<p class="tagline" id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 				<p>Phone <strong>+1 (111) 555-1234</strong></p>
 				<p>Email <strong>email@yoursite.com</strong></p>
-			</div><!-- end contact -->
-
-			<footer class="main-footer"><!-- start footer -->
+        </div><!-- end contact -->
+        
+        <footer class="main-footer"><!-- start footer -->
 				
 				<a class="footer-name" href="/">
 					<!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
@@ -95,9 +94,7 @@
 				<ul class="nav" id="footer-nav">
 					<li><a href="#">BACK TO TOP</a></li>					
 				</ul>
-			</footer><!-- end header -->
-
-		</div><!-- end container -->
+        </footer><!-- end header -->
 
 	</body>
 </html>  

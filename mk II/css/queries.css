@@ -5,28 +5,43 @@
 @media (min-width: 768px) {
     
     .main-header {
-		height: 200px;
-		justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
 	}
     
 	.site-logo {
-		width: 140px;
 	}
     
 	.nav {
-		margin-top: 3em;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 	}
     
 	.nav a {
 		border-bottom-color: transparent;
+        margin-left: 2em;
 	}
     
-    #footer-nav {
-        margin-top: 1.5em;
-        flex-direction: row;
-		justify-content: space-between;
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .container div {
+        max-width: 49%;
+    }
+    
+    .main-footer {
+        padding: 0 1.5em 3em 0;
     }
     
     /* ---- Float clearfix ---- */
@@ -37,26 +52,45 @@
         clear: both;
     }
     
-	#first,
-    #third,
-    #fifth {
-		 width: 49.25%;
-		 float: left;
-         margin-right: .5%;
-   	}
-   
-    #second,
-    #fourth,
-    #sixth {
-        width: 49.25%;
-        float: right;
+    #header-tagline {
+        padding: .75em;
+        text-align: left;
+    }
+    
+    #footer-nav {
+        flex-direction: row;
+		justify-content: space-between;
+    }
+    
+    #btt {
+        display: none; 
+    }
+    
+    #home,
+    #portfolio,
+    #contact {
+       display: block; 
     }
 	
 }
 
 @media (min-width: 1024px) {
+    .site-logo {
+        padding: 1em;
+    }
+    
+    .main-header {
+        padding: 2em 2em 0 2em;
+    }
+    
+    .about {
+        padding: 0 2em 3em 2em;
+    }
+    
+    
 	.container {
 		width: 1080px;
+        padding: 3em;
 	}
     
 	.main-header,
@@ -71,11 +105,32 @@
 	.nav {
 		margin-top: 0;
 		align-self: center;
+        padding-right: 1.2em;
 	}
     
-	.nav li {
-		margin-left: .65em;
-		margin-right: .65em;
+	.nav a {
+		border-bottom-color: transparent;
 	}
+    
+    .main-footer {
+        padding: 0 1.5em 1em 0;
+    }
+    
+    #footer-tagline {
+        max-width: 50%
+    }
+    
+    #first,
+    #third,
+    #fifth {
+		 width: 32.5%;
+
+   	}
+   
+    #second,
+    #fourth,
+    #sixth {
+        width: 32.5%;
+    }
     
 }

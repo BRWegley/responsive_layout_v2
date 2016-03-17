@@ -1,5 +1,5 @@
 /* --------------------------
-  Main Styles
+  Nav Styles
 --------------------------- */
 
 .main-header,
@@ -16,7 +16,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border-top: 1px solid #000;
+	border-top: 1px solid #797e83;
 }
 
 .site-logo {

@@ -10,13 +10,14 @@
 
 .main-header {
 	padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .main-footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border-top: 1px solid #797e83;
+	border-top: 1px solid turquoise;
 }
 
 .site-logo {
@@ -34,17 +35,15 @@
 
 .nav a {
 	display: block;
-	color: #797e83;
 	background-color: tomato;
 	font-size: 1.125em;
-	font-weight: 300;
 	text-align: center;
 	padding: .4em;
 	margin: .2em;
-	border-bottom: 1px solid #ebecec;
 }
 
 .nav a:hover {
-	color: #0b0b0b;
-	border-bottom-color: #52bab3;
+    transition: all 0.75s ease;
+    color: lightblue;
+    background-color: dimgray
 }

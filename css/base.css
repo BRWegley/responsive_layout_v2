@@ -64,9 +64,11 @@ footer {
 }
 
 .about,
-.contact {
+.contact,
+.skills {
 	text-align: center;
 	font-size: 1.15em;
+    border-top: .5px solid turquoise;
 }
 
 .contact {
@@ -78,12 +80,30 @@ footer {
     align-items: center;
 }
 
+.skills {
+    padding: .5em .55em 3.5em .55em;
+    background-color: whitesmoke;
+    opacity: .85;
+    display: flex;
+    flex-direction: column; 
+}
+
 .container {
 	margin-top: 3.25em;
     width: 90%;
 	margin: auto;
     display: flex;
     flex-direction: column;
+}
+
+.skills li {
+    padding: .5em;
+    margin: .25em;
+    background-color: lightblue;
+    transition: background-color 0.5s ease;
+}
+.skills li:hover {   
+    background-color: lightcoral;
 }
 
 /* ---- Float clearfix ---- */
@@ -116,8 +136,14 @@ footer {
 
 #home,
 #portfolio,
-#contact {
+#contact,
+#skills {
    display: none; 
+}
+
+#skills-title {
+    color: black;
+    padding: .5em;
 }
 
 /* --------------------------

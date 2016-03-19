@@ -11,33 +11,33 @@
 	
 	<body>
 
-		<header class="main-header"><!-- start header -->
+		<header class="main-header" id="top"><!-- start header -->
             <div class="site-logo">
                 <a href="/">
-                    <!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
                     <h2 id="designer-name">Ben Wegley</h2>
                 </a>
             </div>
             
             
             <ul class="nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>		
-                <li><a href="#">CONTACT</a></li>						
+                <li id="home-button"><a href="index.html">HOME</a></li>
+                <li id="portfolio-button"><a href="#portfolio-title">PORTFOLIO</a></li>
+                <li id="skills-button"><a href="#skills-title">SKILLS</a></li>	
+                <li id="contact-button"><a href="#contact-section">CONTACT</a></li>
             </ul>
 
         </header><!-- end header -->
         
          <div class="about"> <!-- start about -->
-            <img id="profile-picture" src="img/responsive-layout-profile.png" alt="Profile Picture">
+            <img id="profile-picture" src="img/me.jpg" alt="Profile Picture">
             <p class="tagline" id="header-tagline">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div><!-- end about -->
         
-        <h3 class="portfolio-title">PORTFOLIO</h3>
+        <h3 class="portfolio-title" id="portfolio-title">PORTFOLIO</h3>
         
         <div class="container"><!-- start container -->
 
-            <div class="project" id="first" alt="">
+            <div class="project" id="first">
                 <img src="img/portfolio-1.png" alt="Marketing Page">
                 <h1 class="piece-title">Marketing Page</h1>
                 <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
@@ -72,11 +72,59 @@
                 <h1 class="piece-title">Calculator</h1>
                 <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
             </div>
+            
+            <div class="project" id="seventh">
+                <img src="img/portfolio-7.png" alt="Video Player">
+                <h1>Video Player</h1>
+                <p>This project shows videos in a player similar to Vimeo and allows you to pause, play, rewing and stop videos.</p>
+            </div>
+
+            <div class="project" id="eigth">
+                <img src="img/portfolio-14.png" alt="Sticky Notes">
+                <h1 class="piece-title">Sticky Notes</h1>
+                <p>This allows you to place movable sticky notes on your screen to help you remember tasks or goals.</p>
+            </div>
+            
+            <div class="project" id="ninth">
+                <img src="img/portfolio-15.png" alt="Web Browser">
+                <h1 class="piece-title">Web Browser</h1>
+                <p>This project is a simple web browser that allows you to browse the internet (obviously)</p>
+            </div>
+            
+            <div class="project" id="tenth">
+                <img src="img/portfolio-8.png" alt="Other Video Player">
+                <h1 class="piece-title">Other Video Player</h1>
+                <p>This project plays videos similar to YouTube's video player.</p>
+            </div>
+            
+            <div class="project" id="eleventh">
+                <img src="img/portfolio-9.png" alt="Database Viewer">
+                <h1 class="piece-title">Database Viewer</h1>
+                <p>This project allows you to view tables in your database in a visually appealing way.</p>
+            </div>
+            
+            <div class="project" id="twelveth">
+                <img src="img/portfolio-10.png" alt="Loading Animation">
+                <h1 class="piece-title">Loading Animation</h1>
+                <p>This project is a Javascript based loading animation to play while a website is being loaded.</p>
+            </div>
 
 		</div><!-- end container -->
         
+        <div class="skills"> <!-- start contact -->
+            <h3 class="skills-section" id="skills-title">SKILLS</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Jquery</li>
+                <li>PHP</li>
+                <li>A little Ruby</li>
+            </ul>
+        </div><!-- end contact -->
+        
         <div class="contact"> <!-- start contact -->
-            <h3 class="portfolio-title">CONTACT</h3>
+            <h3 class="portfolio-title" id="contact-section">CONTACT</h3>
             <p class="tagline" id="footer-tagline">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <p>Phone <strong>+1 (111) 555-1234</strong></p>
             <p>Email <strong>email@yoursite.com</strong></p>
@@ -85,15 +133,15 @@
         <footer class="main-footer"><!-- start footer -->
 				
             <a class="footer-name" href="/">
-                <!--<img src="img/logo.svg" alt="Poly - UI Toolkit">-->
                 <h2 id="footer-designer-name">Ben Wegley</h2>
             </a>
 
             <ul class="nav" id="footer-nav">
-                <li id="btt"><a href="#">BACK TO TOP</a></li>
-                <li id="home"><a href="#">HOME</a></li>
-                <li id="portfolio"><a href="#">PORTFOLIO</a></li>		
-                <li id="contact"><a href="#">CONTACT</a></li>
+                <li id="btt"><a href="#top">BACK TO TOP</a></li>
+                <li id="home"><a href="index.html">HOME</a></li>
+                <li id="portfolio"><a href="#portfolio-title">PORTFOLIO</a></li>
+                <li id="skills"><a href="#skills-title">SKILLS</a></li>
+                <li id="contact"><a href="#contact-section">CONTACT</a></li>
             </ul>
             
         </footer><!-- end header -->

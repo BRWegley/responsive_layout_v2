@@ -20,6 +20,7 @@
 	.nav a {
 		border-bottom-color: transparent;
         margin-left: 2em;
+        padding: .5em 1em;
 	}
     
     .about {
@@ -68,7 +69,8 @@
     
     #home,
     #portfolio,
-    #contact {
+    #contact,
+    #skills {
        display: block; 
     }
 	
@@ -116,21 +118,27 @@
         padding: 0 1.5em 1em 0;
     }
     
-    #footer-tagline {
-        max-width: 50%
-    }
-    
     #first,
     #third,
-    #fifth {
+    #fifth,
+    #seventh,
+    #ninth,
+    #eleventh {
 		 width: 32.5%;
 
    	}
    
     #second,
     #fourth,
-    #sixth {
+    #sixth,
+    #eigth,
+    #tenth,
+    #twelveth {
         width: 32.5%;
+    }
+    
+    #footer-tagline {
+        max-width: 50%
     }
     
 }
